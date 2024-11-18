@@ -40,7 +40,7 @@ public class CityController {
         locationLabel.setText(event.getLocation());
         dateLabel.setText(event.getEventDay().toString());
         descriptionLabel.setText(event.getDescription());
-        revisedDecriptionLabel.setText(event.getRevisedDescription());
+        revisedDescriptionLabel.setText(event.getRevisedDescription());
         hyperLinkReference.setText(event.getCitation());
 
     }

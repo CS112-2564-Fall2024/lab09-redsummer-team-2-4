@@ -26,14 +26,14 @@ public class MainController {
     Label descriptionLabel;
 
     @FXML
-    ImageView imageLabel;
+    ImageView imageView;
 
     public void initialize(){
         titleLabel.setText(MAIN_TITLE);
         subtitleLabel.setText(MAIN_SUBTITLE);
         descriptionLabel.setText(MAIN_DESCRIPTION);
         Image image= new Image(REDSUMMER_IMAGE_PATH);
-        imageLabel.setImage(image);
+        imageView.setImage(image);
     }
     public void handleStartButton() throws IOException{
         Stage stage = (Stage)titleLabel.getScene().getWindow();
