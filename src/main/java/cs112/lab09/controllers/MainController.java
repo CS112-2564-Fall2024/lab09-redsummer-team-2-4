@@ -26,19 +26,27 @@ public class MainController {
     Label descriptionLabel;
 
     @FXML
-    ImageView imageView;
-    public void handleStartButton(){
+    ImageView imageLabel;
+
+    public void initialize(){
+        titleLabel.setText(MAIN_TITLE);
+        subtitleLabel.setText(MAIN_SUBTITLE);
+        descriptionLabel.setText(MAIN_DESCRIPTION);
+        Image image= new Image(REDSUMMER_IMAGE_PATH);
+        imageLabel.setImage(image);
+    }
+    public void handleStartButton() throws IOException{
+        Stage stage = (Stage)titleLabel.getScene().getWindow();
+        FXMLLoader fxmlloader = new FXMLLoader(RedSummer.class.getResource(MAP_VIEW_RESOURCE));
+        Scene scene = new Scene(fxmlloader.load());
+        stage.setScene(scene);
+        stage.setTitle(MAP_VIEW_TITLE);
+        stage.show();
     }
 
     public void handleExitButton(){
         System.exit(0);
     }
 
-    public void initialize(){
-        titleLabel.setText(MAIN_TITLE);
-        subtitleLabel.setText(MAIN_SUBTITLE);
-        descriptionLabel.setText(MAIN_DESCRIPTION);
-        imageView.setImage(new Image(REDSUMMER_IMAGE_PATH));
 
-    }
 }
