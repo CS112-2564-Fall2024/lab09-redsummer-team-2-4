@@ -37,8 +37,8 @@ public class MainController {
     }
     public void handleStartButton() throws IOException{
         Stage stage = (Stage)titleLabel.getScene().getWindow();
-        FXMLLoader fxmlloader = new FXMLLoader(RedSummer.class.getResource(MAP_VIEW_RESOURCE));
-        Scene scene = new Scene(fxmlloader.load());
+        FXMLLoader fxmlLoader = new FXMLLoader(RedSummer.class.getResource(MAP_VIEW_RESOURCE));
+        Scene scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
         stage.setTitle(MAP_VIEW_TITLE);
         stage.show();
