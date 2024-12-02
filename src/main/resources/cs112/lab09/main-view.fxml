@@ -40,7 +40,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox prefHeight="632.0" prefWidth="645.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src/main/java/cs112/lab09/controllers/MainController">
+<VBox prefHeight="632.0" prefWidth="645.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs112.lab09.controllers.MainController">
   <children>
     <HBox id="HBox" alignment="CENTER_LEFT" prefHeight="123.0" prefWidth="701.0" spacing="5.0" VBox.vgrow="NEVER">
       <children>

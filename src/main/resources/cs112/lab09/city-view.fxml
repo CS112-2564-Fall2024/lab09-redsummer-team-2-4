@@ -41,13 +41,14 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="325.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="325.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs112.lab09.controllers.CityController"
+>
    <children>
       <SplitPane dividerPositions="0.5005662514156285" layoutX="14.0" layoutY="14.0" prefHeight="343.0" prefWidth="297.0">
         <items>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                <children>
-                  <ImageView id="imageView" fitHeight="196.0" fitWidth="144.0" layoutX="-1.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="imageView" fitHeight="196.0" fitWidth="144.0" layoutX="-1.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true" />
                </children>
             </AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
@@ -58,13 +59,13 @@
                         <Label fx:id="dateLabel" alignment="CENTER" prefHeight="17.0" prefWidth="147.0" text="Date" />
                         <Label fx:id="descriptionLabel" prefHeight="109.0" prefWidth="145.0" text="Description" wrapText="true" />
                         <Label fx:id="revisedDescriptionLabel" prefHeight="167.0" prefWidth="145.0" text="Revised Description" wrapText="true" />
-                        <Hyperlink fx:id="hyperlinkReference" prefHeight="24.0" prefWidth="149.0" text="Hyperlink" />
+                        <Hyperlink fx:id="hyperLinkReference" prefHeight="24.0" prefWidth="149.0" text="Hyperlink" />
                      </children>
                   </VBox>
                </children>
             </AnchorPane>
         </items>
       </SplitPane>
-      <Button layoutX="137.0" layoutY="357.0" mnemonicParsing="false" onAction="#CloseButton" text="Close" />
+      <Button layoutX="137.0" layoutY="357.0" mnemonicParsing="false" onAction="#handleCloseButton" text="Close" />
    </children>
 </Pane>
